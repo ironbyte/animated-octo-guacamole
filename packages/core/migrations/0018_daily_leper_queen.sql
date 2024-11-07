@@ -1,0 +1,1 @@
+ALTER TABLE "job_seeker" ADD COLUMN "candidate_number" integer NOT NULL GENERATED ALWAYS AS IDENTITY (sequence name "job_seeker_candidate_number_seq" INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START WITH 1000 CACHE 1);

@@ -1,0 +1,41 @@
+{
+  "private": true,
+  "name": "@nautikos/core",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    "./*": "./src/*.ts"
+  },
+  "scripts": {
+    "db:nuke": "sst shell tsx src/nuke.ts",
+    "db:seed": "sst shell tsx src/seed.ts",
+    "db:seed:dev": "sst shell tsx src/seed.ts --stage dev",
+    "drizzle:check": "sst shell --verbose drizzle-kit check",
+    "drizzle:generate": "sst shell drizzle-kit generate",
+    "drizzle:introspect": "sst shell drizzle-kit introspect",
+    "drizzle:migrate": "sst shell drizzle-kit migrate",
+    "drizzle:migrate:dev": "sst shell drizzle-kit migrate --stage dev",
+    "drizzle:push": "sst shell drizzle-kit push",
+    "drizzle:studio": "sst shell pnpm drizzle-kit studio --verbose",
+    "drizzle:up": "sst shell drizzle-kit up",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@neondatabase/serverless": "^0.9.5",
+    "csv-parse": "^5.5.6",
+    "drizzle-kit": "^0.24.2",
+    "drizzle-orm": "^0.33.0",
+    "drizzle-zod": "^0.5.1",
+    "ulidx": "^2.4.1",
+    "ws": "^8.18.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "8.10.145",
+    "@types/node": "^22.7.4",
+    "@types/ws": "^8.5.12",
+    "tsx": "^4.19.1"
+  }
+}

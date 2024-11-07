@@ -1,0 +1,1 @@
+ALTER TABLE "work_experience" ALTER COLUMN "work_start_month" SET DEFAULT 1;

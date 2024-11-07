@@ -1,0 +1,2 @@
+ALTER TABLE "moderator_assignments" DROP CONSTRAINT "moderator_assignments_job_seeker_id_moderator_id_unique";--> statement-breakpoint
+ALTER TABLE "moderator_assignments" ADD CONSTRAINT "moderator_assignments_job_seeker_id_unique" UNIQUE("job_seeker_id");

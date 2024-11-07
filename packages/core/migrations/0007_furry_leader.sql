@@ -1,0 +1,1 @@
+ALTER TABLE "job_seeker" ALTER COLUMN "emirates_prefs" SET DEFAULT '{}';

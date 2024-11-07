@@ -1,0 +1,1 @@
+ALTER TABLE "moderator_reviews" ADD CONSTRAINT "moderator_reviews_job_seeker_id_section_unique" UNIQUE("job_seeker_id","section");

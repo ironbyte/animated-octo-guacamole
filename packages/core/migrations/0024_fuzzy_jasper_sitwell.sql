@@ -1,0 +1,1 @@
+ALTER TABLE "moderator_reviews" ALTER COLUMN "comments" SET DATA TYPE text;

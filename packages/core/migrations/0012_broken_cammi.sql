@@ -1,0 +1,1 @@
+ALTER TABLE "user_invitations" ALTER COLUMN "status" SET NOT NULL;

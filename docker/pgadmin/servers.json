@@ -1,0 +1,31 @@
+{
+	"Servers": {
+		"1": {
+			"Name": "PERSONAL",
+			"Group": "shippingjobs.ae",
+			"Port": 5432,
+			"Username": "neondb_owner",
+			"Host": "ep-empty-dawn-a2t3itip-pooler.eu-central-1.aws.neon.tech",
+			"SSLMode": "prefer",
+			"MaintenanceDB": "neondb"
+		},
+		"2": {
+			"Name": "DEV",
+			"Group": "shippingjobs.ae",
+			"Port": 5432,
+			"Username": "neondb_owner",
+			"Host": "ep-empty-dawn-a2t3itip-pooler.eu-central-1.aws.neon.tech",
+			"SSLMode": "prefer",
+			"MaintenanceDB": "dev"
+		},
+		"3": {
+			"Name": "STAGING",
+			"Group": "shippingjobs.ae",
+			"Port": 5432,
+			"Username": "//neondb_owner_staging",
+			"Host": "ep-empty-dawn-a2t3itip-pooler.eu-central-1.aws.neon.tech",
+			"SSLMode": "prefer",
+			"MaintenanceDB": "staging"
+		}
+	}
+}

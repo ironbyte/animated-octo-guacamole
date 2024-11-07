@@ -1,0 +1,51 @@
+{
+  "name": "@nautikos/monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "author": "Moncy Gopalan",
+  "type": "module",
+  "scripts": {
+    "docker:dev:start": "docker compose -f docker/docker-compose.yml up -d --build --remove-orphans",
+    "docker:dev:stop": "docker compose -f docker/docker-compose.yml down",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "sst:dev": "sst dev",
+    "drizzle:generate": "sst shell -- pnpm run --filter '@nautikos/core' drizzle:generate",
+    "drizzle:migrate": "sst shell -- pnpm run --filter '@nautikos/core' drizzle:migrate",
+    "db:nuke": "sst shell -- pnpm run --filter '@nautikos/core' db:nuke",
+    "db:seed": "sst shell -- pnpm run --filter '@nautikos/core' db:seed",
+    "sst:deploy:dev": "sst deploy --stage dev",
+    "sst:deploy:prod": "sst deploy --stage prod",
+    "format": "prettier --write \"**/*.{js,ts,tsx,md}\"",
+    "prepare": "husky",
+    "sso": "aws sso login --sso-session=moncy-session --no-browser"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@epic-web/config": "^1.12.0",
+    "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
+    "@tsconfig/node20": "^20.1.4",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "@typescript-eslint/parser": "^8.8.0",
+    "eslint": "^9.12.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "prettier-package-json": "^2.8.0",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "typescript": "^5.6.2"
+  },
+  "lint-staged": {
+    "package.json": [
+      "prettier-package-json --write"
+    ]
+  },
+  "packageManager": "pnpm@9.12.0",
+  "dependencies": {
+    "sst": "3.1.54",
+    "turbo": "^2.1.3"
+  },
+  "pnpm": {
+    "resend/@react-email/render": "0.0.16"
+  }
+}

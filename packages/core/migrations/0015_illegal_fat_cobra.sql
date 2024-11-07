@@ -1,0 +1,2 @@
+ALTER TABLE "user_invitations" DROP CONSTRAINT "user_invitations_email_role_unique";--> statement-breakpoint
+ALTER TABLE "user_invitations" ADD CONSTRAINT "user_invitations_email_unique" UNIQUE("email");
