@@ -194,8 +194,8 @@ importers:
         specifier: ^0.33.0
         version: 0.33.0(@neondatabase/serverless@0.9.5)(@types/pg@8.11.6)(@types/react@18.3.11)(postgres@3.4.4)(react@18.3.1)
       input-otp:
-        specifier: ^1.2.4
-        version: 1.2.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^1.4.1
+        version: 1.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       is-ip:
         specifier: ^5.0.1
         version: 5.0.1
@@ -4837,11 +4837,11 @@ packages:
   inline-style-parser@0.1.1:
     resolution: {integrity: sha512-7NXolsK4CAS5+xvdj5OMMbI962hU/wvwoxk+LWR9Ek9bVtyuuYScDN6eS0rUm6TxApFpw7CX1o4uJzcd4AyD3Q==}
 
-  input-otp@1.2.4:
-    resolution: {integrity: sha512-md6rhmD+zmMnUh5crQNSQxq3keBRYvE3odbr4Qb9g2NWzQv9azi+t1a3X4TBTbh98fsGHgEEJlzbe1q860uGCA==}
+  input-otp@1.4.1:
+    resolution: {integrity: sha512-+yvpmKYKHi9jIGngxagY9oWiiblPB7+nEO75F2l2o4vs+6vpPZZmUl4tBNYuTCvQjhvEIbdNeJu70bhfYP2nbw==}
     peerDependencies:
-      react: ^16.8 || ^17.0 || ^18.0
-      react-dom: ^16.8 || ^17.0 || ^18.0
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0.0 || ^19.0.0-rc
 
   internal-slot@1.0.7:
     resolution: {integrity: sha512-NGnrKwXzSms2qUUih/ILZ5JBqNTSa1+ZmP6flaIp6KmSElgE9qdndzS3cqjrDovwFdmwsGsLdeFgB6suw+1e9g==}
@@ -12651,7 +12651,7 @@ snapshots:
 
   inline-style-parser@0.1.1: {}
 
-  input-otp@1.2.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  input-otp@1.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
