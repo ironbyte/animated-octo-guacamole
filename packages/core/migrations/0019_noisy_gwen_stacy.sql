@@ -1,0 +1,1 @@
+CREATE INDEX IF NOT EXISTS "idx_candidate_number" ON "job_seeker" USING btree ("candidate_number");

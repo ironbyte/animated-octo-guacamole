@@ -1,0 +1,1 @@
+ALTER TABLE "moderator_reviews" ALTER COLUMN "reviewed_at" SET DATA TYPE timestamp (3);

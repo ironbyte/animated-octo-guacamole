@@ -1,0 +1,1 @@
+ALTER TABLE "availability_slots" DROP CONSTRAINT "availability_slots_job_seeker_id_unique";

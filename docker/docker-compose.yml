@@ -1,0 +1,18 @@
+# !FOR DEVELOPMENT ONLY
+volumes:
+  pgadmin-data:
+
+services:
+  pgadmin:
+    container_name: pgadmin4-nautikos
+    image: dpage/pgadmin4:8
+    restart: always
+    ports:
+      - 5532:80
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@shippingjobs.ae
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_DISABLE_POSTFIX: 'true'
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+      - ./pgadmin/servers.json:/pgadmin4/servers.json
