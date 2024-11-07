@@ -48,7 +48,7 @@
     "is-ip": "^5.0.1",
     "isbot": "^4.1.0",
     "lib": "link:@/lib",
-    "lucide-react": "^0.453.0",
+    "lucide-react": "^0.454.0",
     "next-themes": "^0.3.0",
     "path-to-regexp": "^8.2.0",
     "react": "^18.3.1",
