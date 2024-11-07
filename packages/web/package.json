@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.676.0",
-    "@aws-sdk/s3-request-presigner": "^3.674.0",
+    "@aws-sdk/s3-request-presigner": "^3.686.0",
     "@conform-to/react": "^1.1.5",
     "@conform-to/zod": "^1.1.5",
     "@epic-web/totp": "^2.0.0",
